@@ -1,0 +1,44 @@
+<div class="container p-5">
+    <button type="button" [ngClass]="{'btn-primary': formNo === 1}" class="mx-2 btn btn-outline" (click)="formSelect(1)">Account Opening</button>
+    <button type="button" [ngClass]="{'btn-primary': formNo === 2}" class="mx-2 btn btn-outline" (click)="formSelect(2)">Lending</button>
+    <button type="button" [ngClass]="{'btn-primary': formNo === 3}" class="mx-2 btn btn-outline" (click)="formSelect(3)">Cheque Deposit</button>
+</div>
+
+<div class="col-md-6 col-sm-12 container p-5 pt-0" *ngIf="formNo === 1">
+    <h2 class="text-center mb-4">Account Creation</h2>
+    <form>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="first-name" placeholder="First Name" />
+        </div>
+        <div class="my-2">
+            <label for="dob" class="col-form-label">DOB:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="mb-2 d-flex justify-content-between">
+            <label for="gender" class="col-form-label">Gender:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" checked>
+                <label class="form-check-label" for="male">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female">
+                <label class="form-check-label" for="female">
+                    Female
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="others">
+                <label class="form-check-label" for="others">
+                    Others
+                </label>
+            </div>
+        </div>
+        <div class="d-grid">
+            <button class="mt-3 btn btn-secondary">Submit Application</button>
+        </div>
+    </form>
+    <br>
+    <h5><a routerLink="/login">Click here</a> to login as existing user</h5>
+</div>
