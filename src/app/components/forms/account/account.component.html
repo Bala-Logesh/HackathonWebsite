@@ -1,0 +1,55 @@
+<div class="col-md-6 col-sm-12 container p-5 pt-0">
+    <h2 class="text-center mb-4">Account Creation</h2>
+    <form>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="first-name" placeholder="First Name" />
+        </div>
+        <div class="my-2">
+            <label for="dob" class="col-form-label">DOB:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="mb-2 d-flex justify-content-between">
+            <label for="gender" class="col-form-label">Gender:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" checked>
+                <label class="form-check-label" for="male">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female">
+                <label class="form-check-label" for="female">
+                    Female
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="others">
+                <label class="form-check-label" for="others">
+                    Others
+                </label>
+            </div>
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="aadhaar" placeholder="Aadhaar Number" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="pan" placeholder="PAN" />
+        </div>
+        <div class="mb-2">
+            <input type="phone" class="form-control" id="phone" placeholder="Phone Number" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="occupation" placeholder="Occupation" />
+        </div>
+        <div class="mb-2">
+            <input type="number" class="form-control" id="income" placeholder="Annual Income" />
+        </div>
+        <div class="mb-2">
+            <label for="file" class="col-form-label">Upload the photos of Aadhar and PAN:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" class="form-control" id="file" multiple/>
+        </div>
+        <div class="d-grid">
+            <button class="mt-3 btn btn-secondary">Submit Application</button>
+        </div>
+    </form>
+</div>
